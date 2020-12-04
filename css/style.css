@@ -1,0 +1,388 @@
+body {
+   margin:0;
+	padding:0;
+	font-family:Arial;
+   line-height: 1.5em;
+   background-image: url("img/background.jpg");
+}
+
+#wrapper{
+   width: auto;
+   min-height: 400px;
+   margin: 10px 10px 10px 10px;
+   background-color: white;
+   
+}
+/*===============================================*/
+.dropbtn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 16px;
+   font-size: 16px;
+   border: none;
+   cursor: pointer;
+ }
+ 
+ .dropbtn:hover, .dropbtn:focus {
+   background-color: #3e8e41;
+ }
+ 
+ #myInput {
+   box-sizing: border-box;
+   background-image: url('searchicon.png');
+   background-position: 14px 12px;
+   background-repeat: no-repeat;
+   font-size: 16px;
+   padding: 14px 20px 12px 45px;
+   border: none;
+   border-bottom: 1px solid #ddd;
+ }
+ 
+ #myInput:focus {outline: 3px solid #ddd;}
+ 
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .dropdown-content {
+   display: none;
+   position: absolute;
+   background-color: #f6f6f6;
+   min-width: 230px;
+   overflow: auto;
+   border: 1px solid #ddd;
+   z-index: 1;
+ }
+ 
+ .dropdown-content a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ 
+ .dropdown a:hover {background-color: #ddd;}
+ 
+ .show {display: block;}
+
+/*============================Header=============================*/
+#header {
+  position: relative;
+  width: auto;
+  min-height: 120px; 
+  background-color: rgba(49, 47, 47, 0.925);
+  margin: 0 5px 0 5px;
+}
+#header a img{
+   position: absolute;
+   height: 120px;
+   width: 300px;
+   display: block;
+}
+/*==============================================================*/
+#search-advanced{
+   border: solid 1px black;
+   height: 50px;
+   width: auto;
+   background-color: rgb(95, 92, 92);
+   margin:0 30px 0 30px;
+}
+#search-advanced span{
+   display: block;  
+}
+#search-advanced div{
+   float: left;
+}
+ /*--------------------------------------------------------------
+ 2.0 - SEARCH FORM
+ --------------------------------------------------------------*/
+ #search-control{
+    position: absolute;
+    height: 120px;
+    line-height: 120px;
+    left: 70%;
+ }
+#search-control .searchform {
+
+   background:#f4f4f4;
+   background:rgba(244,244,244,.79);
+   border: 1px solid #d3d3d3;
+   padding: 2px 5px;
+   position: absolute;
+   top: 50%;
+   width:347px;
+   box-shadow:0 4px 9px rgba(0,0,0,.37);
+   -moz-box-shadow:0 4px 9px rgba(0,0,0,.37);
+   -webkit-box-shadow:0 4px 9px rgba(0,0,0,.37);
+   border-radius: 10px;
+   -moz-border-radius: 10px;
+   -webkit-border-radius: 10px;
+ }
+  
+#search-control .searchform input, .searchform button {
+   float: left;
+ }
+ #search-control .searchform input {
+     background:#fefefe;
+     border: none;
+     font:12px/12px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+     margin-right: 5px;
+     padding: 10px;
+     width: 216px;
+     box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+     -moz-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+     -webkit-box-shadow: 0 0 4px rgba(0,0,0,.4) inset, 1px 1px 1px rgba(255,255,255,.75);
+   border-radius: 9px;
+   -moz-border-radius: 9px;
+   -webkit-border-radius: 9px;
+ }
+ #search-control .searchform input:focus {
+         outline: none;
+         box-shadow:0 0 4px #0d76be inset;
+         -moz-box-shadow:0 0 4px #0d76be inset;
+         -webkit-box-shadow:0 0 4px #0d76be inset;
+     }
+     #search-control .searchform input::-webkit-input-placeholder {
+     font-style: italic;
+     line-height: 15px
+     }
+  
+     #search-control .searchform input:-moz-placeholder {
+       font-style: italic;
+     line-height: 15px
+     }
+  
+     #search-control .searchform button {
+     background: rgb(52,173,236);
+     background: -moz-linear-gradient(top, rgba(52,173,236,1) 0%, rgba(38,145,220,1) 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(52,173,236,1)), color-stop(100%,rgba(38,145,220,1)));
+     background: -webkit-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+     background: -o-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+     background: -ms-linear-gradient(top, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+     background: linear-gradient(to bottom, rgba(52,173,236,1) 0%,rgba(38,145,220,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#34adec', endColorstr='#2691dc',GradientType=0 );
+     border: none;
+     color:#fff;
+     cursor: pointer;
+     font: 13px/13px 'HelveticaNeue', Helvetica, Arial, sans-serif;
+     padding: 10px;
+     width:106px;
+     box-shadow: 0 0 2px #2692dd inset;
+     -moz-box-shadow: 0 0 2px #2692dd inset;
+     -webkit-box-shadow: 0 0 2px #2692dd inset;
+   border-radius: 9px;
+   -moz-border-radius: 9px;
+   -webkit-border-radius: 9px;
+}
+#search-control .searchform button:hover {
+   opacity:.9;
+}
+/*=====================login_nav=========================*/
+#login_nav {
+   height: 70px;  
+   position: absolute;
+   width: 600px;
+   line-height: 70px; 
+   margin-left: 45%;
+   color: white;
+   text-align: right;
+   font-weight: bold;
+   z-index: 1;
+}
+#login_nav a{
+   text-decoration-line: none;
+   z-index: 2;
+   position: absolute;
+   width: 200px;
+   text-align: left;
+   margin-left: 5px;
+}
+#login_nav a img{
+   width: 25px;
+   margin-left: 90px;
+}
+input[type=submit]{
+   border-radius: 5px;
+   background-color: white;
+}
+input[type=button]{
+   border-radius: 5px;
+   background-color: white;
+}
+.item1{ 
+  position: inherit;
+  width: 100%;
+  margin-top: 70px;
+}
+.item2{
+   width: 100%;
+}
+/*===========================Sidebar======================================*/
+#sidebar{
+   float: left;
+   width: 300px;
+   min-height: 400px;
+   margin: 10px 10px 0 5px;
+   font-weight: bold;
+}
+
+#sidebar dl{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   color: white;
+   border: solid 1px rgb(180, 178, 178);
+   margin-bottom: 2px;
+}
+#sidebar dt{
+  background-color: rgb(172, 8, 8);
+  margin-bottom: 2px;
+  text-align:center;
+}
+
+#sidebar dd{
+   background-color: rgb(67, 91, 165);
+   margin: 0;
+   margin-top: 2px;
+   text-decoration: none;
+}
+
+#sidebar dd a{
+   color: white;
+   text-decoration: none;
+   margin-left: 20px;
+}
+/*===========================content=============================*/
+#content{
+  float: left;
+  width: calc(100% - 323px);
+  border: solid 2px rgb(180, 178, 178);
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+/*===========================pIndex.php=============================*/
+#content h2{
+   color: rgb(59, 105, 189);
+   font-size: 40px;
+   clear: both;
+   margin-left: 50px;
+  
+}
+div.box {
+   float: left;
+   margin: 20px 50px 20px 30px;
+   border-top: solid 10px rgb(141, 141, 223); 
+   text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+   width: 400px;
+}
+div.box img{
+   margin-top: 10px;
+   width: 400px;
+   height: 300px;
+}
+div.box .pname {
+  color: fuchsia;
+}
+div.box .pprice{
+   color: red;
+}
+div.box .action{
+  float: right;
+  margin-right: 20px;
+}
+.action a{
+   text-decoration-line: none;
+}
+/*===========================pChiTiet.php=======================*/
+#chitietsp{
+   font-weight: bolder;
+   min-height: 400px;
+}
+#chitietleft{
+   float: left;
+   margin-left: 20px;
+   margin-right: 30px;
+   display: block;
+   margin: auto;
+}
+#chitietright{
+   float: left;
+   width: 500px;
+}
+#mota{
+   clear: both; 
+   font-weight: lighter;
+   font-style: italic;
+   margin-left: 5px;
+}
+span.label {
+   display: block;
+   width: 150px;
+   text-align: right;
+   float: left;
+   margin-right: 10px;
+}
+span.productname{
+   display: block;
+   font-size: 30px;
+   color: rgb(230, 66, 153);
+   margin-bottom:5px;
+}
+span.price{
+   display: block;
+   font-size: 25px;
+   color: darkorange;
+   margin-bottom:5px;
+}
+span.factory{
+   display: block;
+   font-size: 20px;
+   color: rgb(96, 177, 14);
+   margin-bottom:5px;
+}
+span.data{
+   display: block;
+   font-size: 20px;
+   color: rgb(73, 71, 71);
+   margin-bottom:5px;
+}
+/*==============================pDanhSach.php===================*/
+#quanlygiohang{
+   margin: 0 5px 0 5px;
+}
+#quanlygiohang h1{
+   text-align: center;
+   color: rgb(240, 118, 30);
+}
+
+#quanlygiohang table{
+   border: solid 2px rgb(24, 24, 165);
+}
+#quanlygiohang th,td{
+   border: solid 2px rgb(24, 24, 165);
+   width: fit-content;
+}
+#quanlygiohang .pprice{
+   color: rgb(224, 128, 11);
+   text-align: center;
+   font-weight: bold;
+}
+#quanlygiohang a img{
+   display: block;
+   margin: auto;
+}
+/*==============================Footer=========================*/
+#footer{
+   width: auto;
+   height: 60px;
+   line-height: 60px;
+   clear: both;
+   background-color: rgb(168, 20, 20);
+   text-align: center;
+   font-weight: bold;
+   color: white;
+   border-top:solid 5px  rgb(148, 146, 146);
+}

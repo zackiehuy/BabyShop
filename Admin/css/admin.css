@@ -1,0 +1,153 @@
+body {
+    margin:0;
+    padding:0;
+    font-family:Arial;
+    line-height: 1.5em;
+    background-image: url("img/background.jpg");
+ }
+ /*=======================header=============================*/
+ #header{
+    background-color:rgb(214, 98, 137);
+    height: 100px;
+    width: auto;
+    line-height: 100px;
+    text-align: center;
+ }
+
+ #header a{
+     text-decoration-line: none;
+     font-size: 50px;
+     color: white;
+     font-weight: bold;
+ }
+
+ /*=======================menu=============================*/
+ #menu{
+     margin: 5px 0 10px 0;
+     height: 50px;
+     line-height: 50px;
+     background-color: rgb(62, 99, 201);
+     color: white;
+ }
+
+#mMenu{
+   float: left;
+}
+#login{
+   position: relative;
+   float: right;
+}
+#login a{
+   text-decoration-line: none;
+   color: white;
+   font-weight: bold;
+   font-size: 20px;
+}
+#mMenu a{
+   display: inline-block;
+   text-decoration-line: none;
+   color: white;
+   font-size: 20px;
+   font-weight: bold; 
+   margin-right: 2px;
+}
+ #mMenu a:active{
+   background-color: rgb(214, 61, 34);
+ }
+
+ /*=======================content=============================*/
+ #content{
+   min-height: 400px;
+   width: auto;
+   margin-bottom: 2px;
+ }
+ #content h1{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(212, 103, 24);
+ }
+
+ #content table{
+   border-color: rgb(94, 94, 209);
+   margin: auto;
+   text-align: center;
+ }
+ #content table th{
+   background-color: cornflowerblue;
+   
+   color: white;
+ }
+ table.qlsanpham th{
+   width: fit-content;
+ }
+
+ #content fieldset{
+   width: 1000px;
+   margin: auto;
+   font-weight: bold;
+ }
+ #content legend{
+    text-align: center;
+ }
+
+ #content fieldset span{
+   display: block;
+   position: absolute;
+   width: 200px;
+   text-align: right;
+ }
+ #content fieldset input[type=text],input[type=file],select,textarea{
+   margin-left: 230px;
+   border-radius: 5px;
+   background-color: white;   
+ }
+ 
+ #content fieldset select{
+   border-radius: 5px;
+   background-color: white;
+   border:solid 2px rgb(117, 117, 231);
+   color: rgb(48, 48, 179);
+ }
+ #content fieldset.CTdonhang span{
+   display: block;
+   margin-right: 20px;
+   position: relative;
+   text-align: right;
+   width: 200px;
+   float: left;
+ }
+ #content fieldset.CTdonhang div{
+   position: relative;
+ }
+ #content fieldset.CTdonhang a{
+    text-decoration-line: none;
+    display: block;
+    border: solid 1px red;
+    float: left;
+    margin-left: 5px;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+ }
+ #content a.btnGiaoHang {
+  background-color: rgb(48, 48, 179);
+ }
+ #content a.btnThanhToan {
+   background-color: rgb(73, 165, 156);
+ }
+ #content a.btnHuy {
+   background-color: rgb(216, 98, 216);
+}
+#content a.btnInDonHang {
+background-color: rgb(64, 113, 187);
+}
+/*========================footer=============================*/
+#footer{
+   height: 50px;
+   line-height: 50px;
+   background-color: rgb(4, 54, 54);
+   text-align: center;
+   color: white;
+}
